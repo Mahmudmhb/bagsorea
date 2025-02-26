@@ -1,7 +1,6 @@
-"use client";
 import { Carousel } from "antd";
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+import { Avatar } from "@heroui/avatar";
 
 const reviews = [
   {
@@ -66,7 +65,7 @@ const reviews = [
   },
 ];
 
-export default function ReviewCarousel() {
+const ReviewCarousel = async () => {
   return (
     <div
       className="relative bg-cover bg-center py-16 min-h-[70vh]"
@@ -74,19 +73,23 @@ export default function ReviewCarousel() {
     >
       <div className="max-w-4xl mx-auto text-center text-white">
         <h2 className="text-3xl font-bold mb-6">What Our Customers Say</h2>
-        <Carousel autoplay dotPosition="bottom">
+        <Carousel autoplay dotPosition="bottom" arrows={true}>
           {reviews.map((review, index) => (
             <div
               key={index}
               className="p-6 bg-slate-400 text-gray-800 rounded-xl shadow-lg"
             >
               <div className="flex flex-col items-center">
-                <Image
+                {/* <Image
                   src={review.image}
                   alt={review.name}
                   width={80}
                   height={80}
                   className="rounded-full object-cover"
+                /> */}
+                <Avatar
+                  className="w-20 h-20 text-large"
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
                 />
                 <h3 className="text-lg font-semibold mt-4">{review.name}</h3>
                 <div className="flex mt-2">
@@ -109,4 +112,5 @@ export default function ReviewCarousel() {
       </div>
     </div>
   );
-}
+};
+export default ReviewCarousel;
