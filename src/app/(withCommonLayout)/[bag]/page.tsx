@@ -4,6 +4,7 @@ import { Button, Rate, Card } from "antd";
 import { useGetSingleBagQuery } from "@/Lib/features/Api/BagsApi/BagsApi";
 import { TBags } from "@/components/Types/type";
 import Image from "next/image";
+import Link from "next/link";
 
 const BagDetails = () => {
   const { bag } = useParams();
@@ -13,7 +14,6 @@ const BagDetails = () => {
   if (isLoading) {
     return <p className="text-center text-lg font-semibold">Loading...</p>;
   }
-  console.log(data);
   const bagItem: TBags = data || {};
 
   return (
@@ -54,14 +54,11 @@ const BagDetails = () => {
             <p className="text-gray-700 mt-4">{bagItem.description}</p>
 
             {/* Buy Now Button */}
-            <Button
-              type="primary"
-              size="large"
-              className="mt-4 w-full"
-              onClick={() => alert("Purchased!")}
-            >
-              Buy Now
-            </Button>
+            <Link href={`/booking-from/${bagItem.id}`}>
+              <Button type="primary" size="large" className="mt-4 w-full">
+                Buy Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
