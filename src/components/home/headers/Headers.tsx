@@ -7,6 +7,8 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,16 +34,18 @@ export default function Header() {
         }`}
       >
         {/* Left - Logo & Brand Name */}
-        <div className="flex items-center space-x-4">
-          <img src="/logo.png" alt="Logo" className="w-12 h-12" />
-          <span
-            className={`text-xl font-bold ${
-              isSticky ? "text-black" : "text-white"
-            }`}
-          >
-            Bagsorea
-          </span>
-        </div>
+        <Link href="/">
+          <div className="flex items-center space-x-4">
+            <Image src="/logo.png" alt="Logo" className="w-12 h-12" fill />
+            <span
+              className={`text-xl font-bold ${
+                isSticky ? "text-black" : "text-white"
+              }`}
+            >
+              Bagsorea
+            </span>
+          </div>
+        </Link>
 
         {/* Middle - Search Bar */}
         <div className="w-1/2 max-w-lg">

@@ -13,7 +13,3 @@ export type TBags = {
   description: string;
   reviews: TReview[];
 };
-
-export type TBagsResponse = {
-  bags: TBags[];
-};

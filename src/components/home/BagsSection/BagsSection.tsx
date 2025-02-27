@@ -4,27 +4,19 @@ import Image from "next/image";
 import Bag from "@/components/Bags/bag";
 import { TBags } from "@/components/Types/type";
 import { useGetBagsQuery } from "@/Lib/features/Api/BagsApi/BagsApi";
+import { useAppDispatch, useAppSelector } from "@/Lib/app/hooks";
+import { getAllBags, useGetBags } from "@/Lib/features/Api/BagsApi/bagSlice";
 
 const BagsSection = () => {
-  const { data, isLoading, error } = useGetBagsQuery(undefined);
-  console.log(data);
-
-  // Handle loading state
+  const { data, isLoading } = useGetBagsQuery(undefined);
+  const dispatch = useAppDispatch();
+  const bags = useAppSelector(useGetBags);
   if (isLoading) {
     return <p className="text-center text-lg font-semibold">Loading...</p>;
   }
 
-  // Handle error state
-  if (error) {
-    return (
-      <p className="text-center text-lg font-semibold text-red-500">
-        Failed to load bags.
-      </p>
-    );
-  }
-
-  const bags = data || []; // Ensure `bags` is an array to avoid errors
-
+  const bagSilce = data || [];
+  dispatch(getAllBags(bagSilce));
   return (
     <div className="px-8 py-12 bg-[#f4f0ed] min-h-[80vh]">
       <div className="text-center mb-8">

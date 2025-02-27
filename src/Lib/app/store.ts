@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { BaseApi } from "../features/Api/baseApi";
+import { BagsSlice } from "../features/Api/BagsApi/bagSlice";
 // ...
 
 export const store = configureStore({
   reducer: {
     // Add the generated reducer as a specific top-level slice
     [BaseApi.reducerPath]: BaseApi.reducer,
+    bags: BagsSlice.reducer,
   },
   // Adding the api middleware enables caching, invalidation, polling,
   // and other useful features of `rtk-query`.
