@@ -1,15 +1,30 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-
 import Bag from "@/components/Bags/bag";
 import { TBags } from "@/components/Types/type";
+import { useGetBagsQuery } from "@/Lib/features/Api/BagsApi/BagsApi";
 
-// Mock data for the bags
+const BagsSection = () => {
+  const { data, isLoading, error } = useGetBagsQuery(undefined);
+  console.log(data);
 
-const BagsSection = async () => {
-  const data = await fetch("/public/bags.json");
-  const bags = await data.json();
-  console.log(bags);
+  // Handle loading state
+  if (isLoading) {
+    return <p className="text-center text-lg font-semibold">Loading...</p>;
+  }
+
+  // Handle error state
+  if (error) {
+    return (
+      <p className="text-center text-lg font-semibold text-red-500">
+        Failed to load bags.
+      </p>
+    );
+  }
+
+  const bags = data || []; // Ensure `bags` is an array to avoid errors
+
   return (
     <div className="px-8 py-12 bg-[#f4f0ed] min-h-[80vh]">
       <div className="text-center mb-8">
@@ -18,8 +33,9 @@ const BagsSection = async () => {
           Explore our latest bag collection
         </p>
       </div>
+
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Left Side: 50% Image */}
+        {/* Left Side: Image */}
         <div className="lg:w-1/2 w-full h-96 lg:h-auto relative">
           <Image
             alt="Bag Section"
@@ -29,20 +45,21 @@ const BagsSection = async () => {
           />
         </div>
 
-        {/* Right Side: 50% Products List (Scrollable, no scrollbar) */}
+        {/* Right Side: Product Grid */}
         <div className="lg:w-1/2 w-full overflow-y-scroll max-h-[500px] hide-scrollbar">
-          {/* Section Title */}
-
-          {/* Product Grid (Scrollable) */}
-          <div className="space-y-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-8">
-            {/* {bags.map((bag: TBags) => (
-              <Bag key={bag.id} bag={bag} />
-            ))} */}
-          </div>
+          {bags.length === 0 ? (
+            <p className="text-center text-lg text-gray-500">
+              No bags available.
+            </p>
+          ) : (
+            <div className="space-y-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+              {bags.map((bag: TBags) => (
+                <Bag key={bag.id} bag={bag} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
-
-      {/* Add custom CSS for hiding the scrollbar */}
     </div>
   );
 };

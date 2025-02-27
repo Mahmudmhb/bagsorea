@@ -1,3 +1,4 @@
+"use client";
 import { Button, Card } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import React from "react";
 import { TBags } from "../Types/type";
 
 const Bag = ({ bag }: { bag: TBags }) => {
+  console.log(bag);
   return (
     <div className="flex flex-col ">
       <Card

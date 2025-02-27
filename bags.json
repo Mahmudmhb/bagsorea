@@ -1,0 +1,214 @@
+{
+  "bags": [
+    {
+      "id": 1,
+      "name": "Leather Backpack",
+      "price": "$99.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/3_37267b12-6646-4fa1-a314-14fbcf7aa573_480x.webp?v=1737641790",
+      "description": "A premium leather backpack designed for style and durability. Perfect for daily use or travel.",
+      "reviews": [
+        {
+          "user": "Alice Johnson",
+          "rating": 5,
+          "comment": "Absolutely love this backpack! The leather is high quality and it looks amazing.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+        },
+        {
+          "user": "Michael Smith",
+          "rating": 4,
+          "comment": "Great bag, but I wish it had more compartments.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Canvas Tote Bag",
+      "price": "$49.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/4_480x.webp?v=1737641790",
+      "description": "A stylish and eco-friendly tote bag made from durable canvas. Great for shopping or daily use.",
+      "reviews": [
+        {
+          "user": "Emma Wilson",
+          "rating": 5,
+          "comment": "Perfect tote bag for groceries and everyday errands!",
+          "imageUrl": "https://randomuser.me/api/portraits/women/2.jpg"
+        },
+        {
+          "user": "Daniel Lee",
+          "rating": 4,
+          "comment": "Nice bag, but the straps could be a bit longer.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Eco-friendly Handbag",
+      "price": "$79.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/VEGA_Walker_eb577bf1-f0a3-4b4f-8b3a-7ed0d6e951f0_1100x.jpg?v=1739763614",
+      "description": "An elegant handbag made from sustainable materials. A perfect blend of fashion and responsibility.",
+      "reviews": [
+        {
+          "user": "Sophia Davis",
+          "rating": 5,
+          "comment": "Love the eco-friendly materials. Looks great and feels premium!",
+          "imageUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+        },
+        {
+          "user": "James Brown",
+          "rating": 4,
+          "comment": "Good quality, but a bit smaller than expected.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Travel Duffel Bag",
+      "price": "$129.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/Header5_360x.webp?v=1737641790",
+      "description": "A spacious and durable duffel bag, perfect for short trips or weekend getaways.",
+      "reviews": [
+        {
+          "user": "Olivia Martinez",
+          "rating": 5,
+          "comment": "Perfect travel companion! Fits everything I need for a weekend trip.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/4.jpg"
+        },
+        {
+          "user": "William Harris",
+          "rating": 4,
+          "comment": "Good quality, but would love more color options.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/4.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Luxury Leather Satchel",
+      "price": "$149.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/4_480x.webp?v=1737641790",
+      "description": "A handcrafted luxury satchel made with premium leather. A must-have for professionals.",
+      "reviews": [
+        {
+          "user": "Charlotte Anderson",
+          "rating": 5,
+          "comment": "Stylish and functional! I use it every day for work.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        {
+          "user": "Ethan Walker",
+          "rating": 4,
+          "comment": "Great quality, but a bit expensive.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Stylish Messenger Bag",
+      "price": "$89.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/VEGA_Walker_eb577bf1-f0a3-4b4f-8b3a-7ed0d6e951f0_1100x.jpg?v=1739763614",
+      "description": "A modern messenger bag with multiple compartments for easy organization.",
+      "reviews": [
+        {
+          "user": "Isabella Scott",
+          "rating": 5,
+          "comment": "Perfect size and design for my daily commute!",
+          "imageUrl": "https://randomuser.me/api/portraits/women/6.jpg"
+        },
+        {
+          "user": "Benjamin Lewis",
+          "rating": 4,
+          "comment": "Well made, but the strap could be more adjustable.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Urban Backpack",
+      "price": "$89.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/urban_backpack.webp",
+      "description": "A sleek urban backpack with a minimalist design and spacious compartments.",
+      "reviews": [
+        {
+          "user": "Lily Thompson",
+          "rating": 5,
+          "comment": "Lightweight and stylish, perfect for everyday use.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/7.jpg"
+        },
+        {
+          "user": "Jacob Green",
+          "rating": 4,
+          "comment": "Great backpack, though I would prefer a larger version.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/7.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Leather Travel Bag",
+      "price": "$159.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/leather_travel_bag.webp",
+      "description": "A durable leather bag for weekend trips or business travel.",
+      "reviews": [
+        {
+          "user": "Grace Lewis",
+          "rating": 5,
+          "comment": "Best travel bag I've ever had! Very spacious and durable.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/8.jpg"
+        },
+        {
+          "user": "David Allen",
+          "rating": 4,
+          "comment": "Nice travel bag but could use a few more internal pockets.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/8.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Outdoor Gear Bag",
+      "price": "$119.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/outdoor_gear_bag.webp",
+      "description": "An outdoor gear bag designed for hiking, camping, and adventures.",
+      "reviews": [
+        {
+          "user": "Natalie Brooks",
+          "rating": 5,
+          "comment": "Perfect bag for my hiking trips. Holds all my gear comfortably.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/9.jpg"
+        },
+        {
+          "user": "Lucas Carter",
+          "rating": 4,
+          "comment": "Good quality, though I wish it was a bit lighter.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sport Duffel Bag",
+      "price": "$129.99",
+      "imageUrl": "https://bagsmart.com/cdn/shop/files/sport_duffel_bag.webp",
+      "description": "A sporty duffel bag for the gym, sports events, or weekend travel.",
+      "reviews": [
+        {
+          "user": "Mia Clark",
+          "rating": 5,
+          "comment": "Great size and sturdy! Perfect for gym sessions.",
+          "imageUrl": "https://randomuser.me/api/portraits/women/10.jpg"
+        },
+        {
+          "user": "Noah Walker",
+          "rating": 4,
+          "comment": "Very comfortable bag, but the zipper could be more durable.",
+          "imageUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+        }
+      ]
+    }
+  ]
+}
